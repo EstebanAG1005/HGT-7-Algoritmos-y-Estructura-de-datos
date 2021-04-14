@@ -15,6 +15,7 @@ public class BinaryTree<E> {
      * Padre del nodo (parent), los hijos del nodo (left, right)
      */
     protected BinaryTree<E> parent,left,right;
+    public Object root;
 
     /**
      * Se crea Un arbol vacio
@@ -156,7 +157,6 @@ public class BinaryTree<E> {
 		return empty;
 		
 	}
-
 }
     
 
