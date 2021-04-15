@@ -7,7 +7,7 @@
  */
 
 public class BinaryTree<E> {
-    /**
+     /**
      * Valor asociado al nodo
      */
     protected E val;
@@ -33,8 +33,6 @@ public class BinaryTree<E> {
      * @param valor Valor de referencia al nodo (puede ser null)
      */
 	public BinaryTree(E valor) {
-		// TODO Auto-generated constructor stub
-		
 		val = valor;
 		right=left= new BinaryTree<E>();
 		setLeft(left);
@@ -48,7 +46,6 @@ public class BinaryTree<E> {
      * @param right Sub-arbol a la derecha del nodo
      */
 	public BinaryTree(E valor, BinaryTree<E> left, BinaryTree<E> right) {
-		// TODO Auto-generated constructor stub
 		val=valor;
 		if(left==null){
 			left = new BinaryTree<E>();
@@ -159,4 +156,3 @@ public class BinaryTree<E> {
 	}
 }
     
-
