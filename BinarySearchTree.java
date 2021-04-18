@@ -158,6 +158,13 @@ public class BinarySearchTree<E extends Comparable<E>> {
         }
         count++;
     }
+    public boolean contains(E value)
+    {
+        if (root.isEmpty()) return false;
+
+        BinaryTree<E> possibleLocation = locate(root,value);
+        return value.equals(possibleLocation.value());
+    }
 
     public void iterator()
     {
